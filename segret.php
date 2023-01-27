@@ -1,6 +1,7 @@
 <?php
     $paragraph = $_POST['pharagraph'];
     $hide = $_POST['hide'];
+    $new_paragraph = str_replace($hide, '****', $paragraph);
 
 ?>
 
@@ -23,7 +24,12 @@
             echo strlen($paragraph);
             ?>
         </h4>
-        <h4><?php echo $hide ?></h4>
+        <h4>
+            <?php 
+            echo $new_paragraph."<br/>";
+            echo strlen($new_paragraph);
+             ?>
+        </h4>
 
     </div>
 

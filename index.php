@@ -12,6 +12,7 @@
     <div class="container">
         <form action="./segret.php" method="POST">
             <input type="text" name="pharagraph" id="paraghraph" placeholder="Write the paraghraph">
+            <!-- si poteva fare anche con textarea -->
             <input type="text" name="hide" id="hide" placeholder="Hide Word">
             <button type="submit">Send</button>
         </form>
